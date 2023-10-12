@@ -1,7 +1,7 @@
 public class pari_o_dispari {
     public static void main(String arg[]){
         int a = 5 ;
-        evena);
+        even(a);
    
        }
    
