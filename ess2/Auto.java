@@ -1,4 +1,3 @@
-package modulo2.ess2;
 
 public class Auto{
     private int cilindrata;
