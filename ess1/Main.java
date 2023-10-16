@@ -1,4 +1,4 @@
-package modulo2.ess1;
+
 public class Main{
     public static void main(String[] args){
      Studente studente1 = new Studente("Mario","Rossi", 423412);
