@@ -1,4 +1,3 @@
-package modulo2.ess1;
 
 public class Studente {
     private String nome;
