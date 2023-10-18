@@ -9,7 +9,7 @@ public class algebra {
         operator(number);
     }
 
-    public static void operator(String a){
+    public static void operator(char a){
         switch(a){
            case "+" : System.out.println("addizione");
            break;
