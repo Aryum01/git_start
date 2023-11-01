@@ -1,4 +1,4 @@
-package java_advanced.settimana4.ess9;
+package settimana4.ess9;
 
 import java.util.HashSet;
 import java.util.Set;
