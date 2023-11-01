@@ -21,10 +21,10 @@ public class Main {
             while (iterator.hasNext()) {
                 String elemento = iterator.next();
                 if (elemento.equals(find)) {
-                    iterator.remove(); // Rimuovi l'elemento corrente
+                    iterator.remove(); 
                 }
             }
-            System.out.println(prova); // Stampa il set dopo la rimozione
+            System.out.println(prova); 
         }
 
         if (!exist) {
