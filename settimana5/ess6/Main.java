@@ -1,4 +1,4 @@
-package java_advanced.settimana5.ess6;
+package settimana5.ess6;
 
 record Point(int x, int y) {}
 
