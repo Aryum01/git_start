@@ -1,4 +1,4 @@
-package java_advanced.settimana5.ess4;
+package settimana5.ess4;
 
 import java.util.HashMap;
 import java.util.Map;
