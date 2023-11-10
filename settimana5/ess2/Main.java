@@ -1,4 +1,4 @@
-package java_advanced.settimana5.ess2;
+package settimana5.ess2;
 
 public class Main {
     public static void main(String[] args) {
