@@ -1,4 +1,4 @@
-package java_advanced.settimana5.ess5;
+package settimana5.ess5;
 
 import java.util.Map;
 import java.util.TreeMap;
