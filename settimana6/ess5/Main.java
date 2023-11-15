@@ -1,4 +1,4 @@
-package java_advanced.settimana6.ess5;
+package settimana6.ess5;
 
 import java.time.OffsetDateTime;
 
