@@ -1,4 +1,4 @@
-package java_advanced.settimana6.ess9;
+package settimana6.ess9;
 
 import static org.junit.Assert.assertEquals;
 
