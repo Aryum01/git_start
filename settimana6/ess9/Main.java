@@ -10,7 +10,7 @@ public class Main {
 
     }
 
-    public static String date() {
+    public static void date() {
         String dateString = "2023-03-01T13:00:00Z";
 
         OffsetDateTime offsetDateTime = OffsetDateTime.parse(dateString);
@@ -19,6 +19,11 @@ public class Main {
         int month = offsetDateTime.getMonthValue();
         int day = offsetDateTime.getDayOfMonth();
         String dayOfWeek = offsetDateTime.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
-        return "Anno: " + year + "\nMese: " + month + "\nGiorno: " + day + "\nGiorno della Settimana: " + dayOfWeek;
+
+        System.out.println("Anno: " + year);
+        System.out.println("Mese: " + month);
+        System.out.println("Giorno: " + day);
+        System.out.println("Giorno della Settimana: " + dayOfWeek);
     }
 }
+
