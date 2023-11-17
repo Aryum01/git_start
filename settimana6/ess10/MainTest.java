@@ -1,14 +1,24 @@
 package settimana6.ess10;
 
+import org.junit.Test;
+import java.time.OffsetDateTime;
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Test;
-
 public class MainTest {
+
     @Test
     public void testDate() {
-        String actString = Main.date();
-        String expString = "Nuovo anno: 01 marzo 2024 13:00:00\nMese scorso: 01 febbraio 2023 13:00:00\nFra 7 giorni: 08 marzo 2023 13:00:00";
-        assertEquals(expString, actString);
+        String inputDateString = "2023-03-01T13:00:00Z";
+        OffsetDateTime manipulatedDate = Main.date(inputDateString);
+
+        assertEquals(2024, manipulatedDate.getYear());
+
+        assertEquals(2, manipulatedDate.getMonthValue());
+
+        assertEquals(8, manipulatedDate.getDayOfMonth());
+
+        String formattedDate = Main.format(manipulatedDate);
+        String expectedDate = "giovedì 8 febbraio 2024";
+        assertEquals(expectedDate, formattedDate);
     }
 }
