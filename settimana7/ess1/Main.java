@@ -1,4 +1,4 @@
-package java_advanced.settimana7.ess1;
+package settimana7.ess1;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
