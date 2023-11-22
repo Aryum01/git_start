@@ -1,4 +1,4 @@
-package java_advanced.settimana7.ess5;
+package settimana7.ess5;
 
 public class Factory {
     public static Shape createShape(ShapeType shapeType) {
@@ -8,7 +8,7 @@ public class Factory {
             case RETTANGOLO:
                 return new Rettangolo();
             default:
-                throw new IllegalArgumentException("Tipo di shape non supportato: " + shapeType);
+                throw new IllegalArgumentException("Tipo di shape non supportato");
         }
     }
 }
