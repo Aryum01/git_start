@@ -1,4 +1,4 @@
-package java_advanced.settimana7.ess5;
+package settimana7.ess5;
 
 public class Cerchio implements Shape {
     @Override
