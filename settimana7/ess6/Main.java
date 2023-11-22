@@ -5,13 +5,13 @@ public class Main {
 
         User utente1 = User.getInstance();
 
-        System.out.println("Informazioni del primo utente:");
+        System.out.println("Informazioni di utente 1");
         utente1.stampaInformazioni();
 
         utente1.setNome("Danilo");
         utente1.setEta(23);
 
-        System.out.println("\nInformazioni di utente 1 modificate :");
+        System.out.println("\nInformazioni di utente 1 modificate");
         utente1.stampaInformazioni();
 
         User utente2 = User.getInstance();
