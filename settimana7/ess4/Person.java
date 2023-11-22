@@ -1,4 +1,4 @@
-package java_advanced.settimana7.ess4;
+package settimana7.ess4;
 
 public class Person {
 
