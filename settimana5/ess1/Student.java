@@ -1,10 +1,6 @@
-package java_advanced.settimana5.ess1;
-
-import java.util.ArrayList;
-import java.util.List;
+package settimana5.ess1;
 
 public class Student {
-    private static List<Student> students = new ArrayList<>();
     private String name;
     private int age;
 
@@ -13,25 +9,12 @@ public class Student {
         this.age = age;
     }
 
-    public static void newArrayList() {
-
-        students.add(new Student("Mario", 24));
-        students.add(new Student("Carlo", 22));
-        students.add(new Student("Simone", 25));
-        System.out.println("initial list");
-        printArray();
-
+    public String getName() {
+        return name;
     }
 
-    public static void addStudent(Student student) {
-        students.add(student);
-    
-    }
-
-    public static void printArray() {
-        for (Student student2 : students) {
-            System.out.println(student2);
-        }
+    public int getAge() {
+        return age;
     }
 
     @Override
