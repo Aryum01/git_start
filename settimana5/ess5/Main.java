@@ -1,21 +1,37 @@
-package settimana5.ess5;
+package java_advanced.settimana5.ess5;
 
+import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
-        TreeMap<String, Integer> treeMap = new TreeMap<>();
-        treeMap.put("Pesca", 4);
-        treeMap.put("Mela", 3);
-        treeMap.put("Pera", 8);
-        printTreeMap(treeMap);
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        hashMap.put("Pesca", 4);
+        hashMap.put("Mela", 3);
+        hashMap.put("Pera", 8);
+
+        printHashMap(hashMap);
+
+       
+        List<Integer> valuesList = new ArrayList<>(hashMap.values());
+        Collections.sort(valuesList);
+        printSortedValues(valuesList);
     }
 
-    public static void printTreeMap(TreeMap<String, Integer> treeMap) {
-        for (Map.Entry<String, Integer> entry : treeMap.entrySet()) {
+    public static void printHashMap(HashMap<String, Integer> hashMap) {
+        for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
             System.out.println("Chiave: " + entry.getKey() + ", Valore: " + entry.getValue());
         }
         System.out.println();
+    }
+
+    public static void printSortedValues(List<Integer> values) {
+        System.out.println("Valori ordinati:");
+        for (Integer value : values) {
+            System.out.println(value);
+        }
     }
 }
