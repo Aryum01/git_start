@@ -1,4 +1,4 @@
-package java_advanced.settimana5.ess3;
+package settimana5.ess3;
 
 public class Fruit {
     private String name;
