@@ -35,6 +35,13 @@ public class TodoList {
         return resultList;
     }
 
+    public void printList() {
+        for (Task task : tasks) {
+            System.out.println("Task [description=" + task.getDescription() + ", expiration=" + task.getExpiration()
+                    + ", completed=" + task.isCompleted() + "]");
+        }
+    }
+
     public List<Task> getTaskExpirateon() {
         List<Task> formattedTasks = new ArrayList<>();
         OffsetDateTime currentDateTime = OffsetDateTime.now();

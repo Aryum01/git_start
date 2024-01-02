@@ -15,12 +15,14 @@ public class Main {
         todoList.addTasks(task2);
         todoList.addTasks(task3);
 
-        printList(todoList);
+        todoList.printList();
 
         todoList.removeTasks(task3);
         todoList.markCompleted(task1);
+
         System.out.println(" ");
-        printList(todoList);
+        todoList.printList();
+
         System.out.println(" ");
         List<Task> listSearch = todoList.searchTasks();
         System.out.println(listSearch);
@@ -28,12 +30,5 @@ public class Main {
         List<Task> listTasks = todoList.getTaskExpirateon();
         System.out.println(" ");
         System.out.println(listTasks);
-    }
-
-    public static void printList(TodoList todoList) {
-        for (Task task : todoList.getTasks()) {
-            System.out.println("Task [description=" + task.getDescription() + ", expiration=" + task.getExpiration()
-                    + ", completed=" + task.isCompleted() + "]");
-        }
     }
 }
