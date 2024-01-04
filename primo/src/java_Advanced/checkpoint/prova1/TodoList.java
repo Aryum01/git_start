@@ -24,11 +24,11 @@ public class TodoList {
         task.setCompleted(true);
     }
 
-    public List<Task> searchTasks() {
+    public List<Task> searchTasks(String descriptionToSearch) {
         List<Task> resultList = new ArrayList<>();
-        String descriptionToSearch = "asf";
         for (Task task : tasks) {
-            if (task.getDescription().equals(descriptionToSearch)) {
+            if (descriptionToSearch == null && task.getDescription() == null
+                    || (descriptionToSearch != null && descriptionToSearch.equals(task.getDescription()))) {
                 resultList.add(task);
             }
         }

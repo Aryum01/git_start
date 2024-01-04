@@ -24,7 +24,7 @@ public class Main {
         todoList.printList();
 
         System.out.println(" ");
-        List<Task> listSearch = todoList.searchTasks();
+        List<Task> listSearch = todoList.searchTasks("asf");
         System.out.println(listSearch);
 
         List<Task> listTasks = todoList.getTaskExpirateon();
