@@ -1,7 +1,7 @@
 package java_Advanced.checkpoint.prova1;
 
 import java.time.OffsetDateTime;
-
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,17 +37,15 @@ public class TodoList {
 
     public void printList() {
         for (Task task : tasks) {
-            System.out.println("Task [description=" + task.getDescription() + ", expiration=" + task.getExpiration()
-                    + ", completed=" + task.isCompleted() + "]");
+            System.out.println(task);
         }
     }
 
     public List<Task> getTaskExpirateon() {
         List<Task> formattedTasks = new ArrayList<>();
-        OffsetDateTime currentDateTime = OffsetDateTime.now();
         for (Task task : tasks) {
             OffsetDateTime expirationDateTime = task.getExpiration();
-            long diffInDays = currentDateTime.until(expirationDateTime, java.time.temporal.ChronoUnit.DAYS);
+            long diffInDays = OffsetDateTime.now().until(expirationDateTime, ChronoUnit.DAYS);
             if (diffInDays >= 0 && diffInDays <= 2) {
                 formattedTasks.add(task);
             }
