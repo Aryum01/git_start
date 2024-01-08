@@ -23,7 +23,7 @@ public class TodoList {
     public void markCompleted(Task task) {
         task.setCompleted(true);
     }
-
+   // cerca con id 
     public List<Task> searchTasks(String descriptionToSearch) {
         List<Task> resultList = new ArrayList<>();
         for (Task task : tasks) {

@@ -2,16 +2,19 @@ package java_Advanced.esempi.checkpoint.prova1;
 
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 public class Task {
     private String description;
     private OffsetDateTime expiration;
     private boolean completed;
+    private int id;
 
     public Task(String description, OffsetDateTime expiration, boolean completed) {
         this.description = description;
         this.expiration = expiration;
         this.completed = completed;
+        this.id = new Random().nextInt();
     }
 
     public String getDescription() {
@@ -42,7 +45,8 @@ public class Task {
     public String toString() {
         return "Task [description=" + description + ", expiration="
                 + expiration.format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss")) + ", completed=" + completed
-                + "]";
+                + ", id="
+                + id + "]";
     }
 
 }
