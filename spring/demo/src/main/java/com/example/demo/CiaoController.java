@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/v1")
-public record HelloWorldController() {
+public record CiaoController() {
 
     @GetMapping(path = "/ciao")
     public String ciao(@RequestParam(required = true) String nome,
