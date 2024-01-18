@@ -17,6 +17,8 @@ public record Nuovo() {
             @RequestParam(required = true) String nome) {
                 String saluto = String.format("ciao %s, com'è il tempo in %s?",nome, provincia);
         return new Saluto(nome, provincia,saluto);
+       
     }
+    
 
 }
