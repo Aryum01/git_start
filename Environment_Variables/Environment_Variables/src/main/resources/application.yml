@@ -1,0 +1,5 @@
+authcode: xyz458
+devname: danilo
+spring:
+  server:
+    port: 4500
