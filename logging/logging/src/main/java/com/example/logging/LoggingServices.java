@@ -1,15 +1,17 @@
 package com.example.logging;
 
+
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import ch.qos.logback.classic.Logger;
+
 
 @Service
 public class LoggingServices {
 
-    Logger logger = (Logger) LoggerFactory.getLogger(LoggingServices.class);
+    Logger logger =  LoggerFactory.getLogger(LoggingServices.class);
 
     @Value("${custom.int1:2}")
     private int customInt1;
